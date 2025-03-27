@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS Host</title>
+
+    <!-- :white_check_mark: Load AngularJS First -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+
+    <!-- :white_check_mark: Load Config Service AFTER AngularJS -->
+    <!-- <script src="config.service.js"></script> -->
+
+    <!-- :white_check_mark: Load Angular 19 Web Component -->
+    <script src="http://localhost:4200/runtime.js" defer></script>
+    <script src="http://localhost:4200/polyfills.js" defer></script>
+    <script src="http://localhost:4200/main.js" defer></script>
+
+    <!-- <script src="dist/angular-about/runtime.js" defer></script>
+    <script src="dist/angular-about/polyfills.js" defer></script>
+    <script src="dist/angular-about/angular-about/main.js" defer></script> -->
+</head>
+<body ng-controller="MainController">
+    <h1>AngularJS Host App</h1>
+    <p>This is an AngularJS application hosting a Micro Frontend.</p>
+
+    <!-- Use the Web Components -->
+     <lite-button></lite-button>
+    <!-- <about-page title="About Us as prop"></about-page>
+    <home-page>Home title as children</home-page>
+    <services-page></services-page>
+    <contact-page></contact-page> -->
+
+    <script>
+        // :white_check_mark: Ensure we're using the existing AngularJS module
+        var app = angular.module('myApp');
+
+        app.controller('MainController', function($scope, ConfigService) {
+            $scope.message = "Hello from AngularJS!";
+            $scope.config = ConfigService.getConfig();
+            console.log("Config in AngularJS:", $scope.config); // :white_check_mark: Debugging output
+        });
+    </script>
+</body>
+</html>
