@@ -22,8 +22,8 @@ import { booleanAttribute, Component, input, linkedSignal, output } from '@angul
         background: transparent;
         cursor: pointer;
         padding: 5px;
-        width: 100%;
-        height: 100%;
+        width: 24px;
+        height: 24px;
 
         &:hover {
           background-color: #e573732e;
@@ -32,8 +32,8 @@ import { booleanAttribute, Component, input, linkedSignal, output } from '@angul
       }
 
       svg {
-        width: 100%;
-        height: 100%;
+        width: 24px;
+        height: 24px;
       }
     `
 })

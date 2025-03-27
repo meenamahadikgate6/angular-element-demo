@@ -45,7 +45,7 @@ app.config(["$routeProvider", "$locationProvider", function ($routeProvider, $lo
     
 }]);
 
-// app.controller("MainController", function ($scope) {
+// app.controller`("MainController", function ($scope) {
 //   console.log("📦 Loading Angular Remote Component...");
 
 //   async function loadAngularComponent() {
