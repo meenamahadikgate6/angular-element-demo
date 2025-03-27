@@ -9,6 +9,8 @@
 # Node 
 host-app/node_modules/
 web-component-v19-main/node_modules/ 
+web-component-v19-main/.angular
+web-component-v19-main/.angular/
 npm-debug.log 
 yarn-error.log 
  
