@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { provideExperimentalZonelessChangeDetection } from '@angular/core';\nexport const appConfig = {\n  providers: [provideExperimentalZonelessChangeDetection()]\n};","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
