@@ -1,0 +1,17 @@
+// $new-prefix: 'new-'; // Define the prefix
+
+// @import "../../node_modules/bootstrap/scss/functions";
+// @import "../../node_modules/bootstrap/scss/variables";
+// @import "../../node_modules/bootstrap/scss/mixins";
+// @import "../../node_modules/bootstrap/scss/maps";
+// // @import ""
+
+// // Loop through all Bootstrap class names and add a prefix
+// @each $key, $value in $utilities {
+//   .#{$new-prefix}#{$key} {
+//     @extend .#{$key} !optional;
+//   }
+// }
+
+// // Import the rest of Bootstrap
+// @import "../../node_modules/bootstrap/scss/bootstrap";

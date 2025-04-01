@@ -9,7 +9,9 @@ const app = angular.module("app", ['ngRoute']);
 // });
 
 app.controller("MainController", function($scope) {
-  $scope.message = "Welcome to the Home Page!";
+    $scope.onLikeChange = function(event) {
+      console.log('Like state changed:', event.detail);
+    };
 });
 
 
